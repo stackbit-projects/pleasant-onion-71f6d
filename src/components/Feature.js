@@ -46,15 +46,7 @@ export default class Feature extends React.Component {
                 		)}
                 		{has_text && (
                 		<div className={classNames('feature__body', 'my-2', 'cell-12', {'cell-md-8': (is_horiz && has_media) && (media_width === 'thirty-three'), 'cell-md-7': (is_horiz && has_media) && (media_width === 'fourty'), 'cell-md-6': (is_horiz && has_media) && (media_width === 'fifty'), 'cell-md-5': (is_horiz && has_media) && (media_width === 'sixty'), 'order-md-first': has_media && (media_pos === 'right'), 'order-first': has_media && (media_pos === 'bottom'), 'text-center': align_x === 'center', 'text-right': align_x === 'right'})}>
-                			{_.get(feature, 'title', null) && (
-                				_.get(section, 'title', null) ? (
-                				<h3 className="feature__title h2">{_.get(feature, 'title', null)}</h3>
-                				) : 
-                				<h2 className="feature__title h2">{_.get(feature, 'title', null)}</h2>
-                			)}
-                			{_.get(feature, 'subtitle', null) && (
-                			<p className="feature__subtitle">{_.get(feature, 'subtitle', null)}</p>
-                			)}
+        
                 			{_.get(feature, 'content', null) && (
                 			<div className="feature__copy">
                 				{markdownify(_.get(feature, 'content', null))}
