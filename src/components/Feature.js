@@ -35,6 +35,15 @@ export default class Feature extends React.Component {
             <React.Fragment>
                 <div className={classNames('feature', {'maxw-medium': is_vert, 'mx-auto': is_vert, 'py-0': padding_y === 'small', 'py-1': padding_y !== 'small', 'py-sm-3': padding_y === 'large'})}>
                 	<div className="item__content grid items-center">
+                        {_.get(feature, 'title', null) && (
+                				_.get(section, 'title', null) ? (
+                				<h3 className="feature__title h2">{_.get(feature, 'title', null)}</h3>
+                				) : 
+                				<h2 className="feature__title h2">{_.get(feature, 'title', null)}</h2>
+                			)}
+                			{_.get(feature, 'subtitle', null) && (
+                			<p className="feature__subtitle">{_.get(feature, 'subtitle', null)}</p>
+                			)}
                 		{has_media && (
                 		<div className={classNames('feature__media', 'my-2', 'cell-12', {'cell-md-4': (is_horiz && has_text) && (media_width === 'thirty-three'), 'cell-md-5': (is_horiz && has_text) && (media_width === 'fourty'), 'cell-md-6': (is_horiz && has_text) && (media_width === 'fifty'), 'cell-md-7': (is_horiz && has_text) && (media_width === 'sixty')})}>
                 			{_.get(feature, 'video_embed_html', null) ? (
