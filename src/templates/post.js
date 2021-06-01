@@ -60,7 +60,7 @@ export default class Post extends React.Component {
                           <div className={classNames('flex', 'post__image', 'mb-3', {'cell-4': image_pos !== 'top', 'cell-lg-3': image_pos !== 'top', 'mb-lg-0': image_pos !== 'top'})}>
             				 <img src={withPrefix(_.get(this.props, 'pageContext.frontmatter.miniThumb', null))} />
             			  </div>
-                          <p>{_.get(this.props, 'pageContext.frontmatter.rating', null)}</p>
+                          <p>{htmlToReact_.get(this.props, 'pageContext.frontmatter.rating', null)}</p>
                         </div>
 
                         {htmlToReact(_.get(this.props, 'pageContext.html', null))}
