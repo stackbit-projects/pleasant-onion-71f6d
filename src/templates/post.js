@@ -56,7 +56,7 @@ export default class Post extends React.Component {
             	</div>
             	<div className="container container--medium">
             		<div className="post__body text-block">
-                    <div className={classNames('post__image', 'mb-3', {'cell-3': image_pos !== 'top', 'cell-lg-3': image_pos !== 'top', 'mb-lg-0': image_pos !== 'top'})}>
+                    <div className={classNames('post__image', 'mb-3', {'cell-4': image_pos !== 'top', 'cell-lg-3': image_pos !== 'top', 'mb-lg-0': image_pos !== 'top'})}>
             				<img src={withPrefix(_.get(this.props, 'pageContext.frontmatter.miniThumb', null))} />
             			</div>
                         
