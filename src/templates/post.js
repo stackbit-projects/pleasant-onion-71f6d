@@ -61,7 +61,8 @@ export default class Post extends React.Component {
             				 <img src={withPrefix(_.get(this.props, 'pageContext.frontmatter.miniThumb', null))} />
             			  </div>
                           <p className="post__subtitle">
-                          {htmlToReact(_.get(this.props, 'pageContext.frontmatter.allrating', null))}</p>
+                          {htmlToReact(_.get(this.props, 'pageContext.frontmatter.allrating', null))}
+                          </p>
                         </div>
 
                         {htmlToReact(_.get(this.props, 'pageContext.html', null))}
