@@ -56,7 +56,7 @@ export default class Post extends React.Component {
             	</div>
             	<div className="container container--medium">
             		<div className="post__body text-block">
-                        <img src={withPrefix(_.get(this.props, 'pageContext.frontmatter.miniThumb', null))} />
+                        
                         {htmlToReact(_.get(this.props, 'pageContext.html', null))}
             			{_.get(this.props, 'pageContext.frontmatter.episode_embed_html', null) && (
             			<div className="mb-4">
