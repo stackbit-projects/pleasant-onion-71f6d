@@ -58,7 +58,7 @@ export default class Post extends React.Component {
             		<div className="post__body text-block">
                         <div className={classNames('post__image', 'mb-3', {'cell-4': image_pos !== 'top', 'cell-lg-3': image_pos !== 'top', 'mb-lg-0': image_pos !== 'top'})}>
             				<img src={withPrefix(_.get(this.props, 'pageContext.frontmatter.miniThumb', null))} />
-                            <p className="post__subtitle">{_.get(this.props, 'pageContext.frontmatter.rating', null)}</p>
+                            <p className="post__subtitle">{_.get(this.props, 'pageContext.frontmatter.subtitle', null)}</p>
             			</div>
                         
                         {htmlToReact(_.get(this.props, 'pageContext.html', null))}
