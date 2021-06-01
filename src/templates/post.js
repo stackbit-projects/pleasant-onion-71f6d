@@ -61,9 +61,9 @@ export default class Post extends React.Component {
             				{htmlToReact(_.get(this.props, 'pageContext.frontmatter.episode_embed_html', null))}
             			</div>
             			)}
-                        {_.get(this.props, 'pageContext.frontmatter.episode_embed_html', null) && (
+                        {_.get(this.props, 'pageContext.frontmatter.youtubeTraler', null) && (
             			<div className="mb-4">
-            				{htmlToReact(_.get(this.props, 'pageContext.frontmatter.episode_embed_html', null))}
+            				{htmlToReact(_.get(this.props, 'pageContext.frontmatter.youtubeTraler', null))}
             			</div>
             			)}
             			{htmlToReact(_.get(this.props, 'pageContext.html', null))}
