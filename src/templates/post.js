@@ -69,7 +69,7 @@ export default class Post extends React.Component {
             				{htmlToReact(_.get(this.props, 'pageContext.frontmatter.episode_embed_html', null))}
             			</div>
             			)}
-                         {htmlToReact(_.get(this.props, 'pageContext.base', null))}
+                         {htmlToReact(_.get(this.props, 'pageContext.name', null))}
             		</div>
             		{_.get(this.props, 'pageContext.frontmatter.tags', null) && (
             		<footer className="post__footer mt-4 mt-md-5">
