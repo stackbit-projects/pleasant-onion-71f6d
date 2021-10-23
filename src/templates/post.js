@@ -69,7 +69,7 @@ export default class Post extends React.Component {
             				{htmlToReact(_.get(this.props, 'pageContext.frontmatter.episode_embed_html', null))}
             			</div>
                         )}
-                        <div className="mb-4"></div>
+                        <div className="mb-4">
                          {htmlToReact(_.get(this.props, 'pageContext.frontmatter.content2', null))}
             		</div>
             		{_.get(this.props, 'pageContext.frontmatter.tags', null) && (
