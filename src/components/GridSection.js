@@ -27,7 +27,7 @@ export default class GridSection extends React.Component {
             	{(_.get(section, 'title', null) || _.get(section, 'subtitle', null)) && (
             	<div className={classNames('container', 'container--medium', {'mb-5': (grid_gap_y === 'small') || (grid_gap_y === 'medium'), 'mb-4': grid_gap_y === 'large', 'text-center': align_x === 'center', 'text-right': align_x === 'right'})}>
             		{_.get(section, 'subtitle', null) && (
-            		<div className="section__subtitle" id="">{_.get(section, 'subtitle', null)}</div>
+            		<div className="section__subtitle" id="Categor">{_.get(section, 'subtitle', null)}</div>
             		)}
             		{_.get(section, 'title', null) && (
             		<h2 className="section__title mt-0">{_.get(section, 'title', null)}</h2>
