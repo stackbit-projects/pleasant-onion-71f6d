@@ -4,6 +4,7 @@ import _ from 'lodash';
 import {classNames, toStyleObj, withPrefix} from '../utils';
 import GridItem from './GridItem';
 import SectionActions from './SectionActions';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 export default class GridSection extends React.Component {
     render() {
